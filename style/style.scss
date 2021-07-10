@@ -3,6 +3,16 @@
 @import 'mixins';
 
 
+
+//Lexend Deca 400
+// Big Shoulders Display 700
+
+
+
+@mixin  b {
+    border: 1px solid black;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -19,6 +29,24 @@ img{
     display: block;
 }
 
+.check{
+    border: 2px solid black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: url(../Guid/design/mobile-design.jpg);
+    opacity: 0.2;
+    background-size: contain;
+    background-repeat: no-repeat;
+    @media screen and (min-width:1200px) {
+    background: url(../Guid/design/desktop-design.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+        
+    }
+}
 
 .app{
     position: relative;
@@ -50,15 +78,13 @@ img{
             padding: 1.1rem 2.1rem;
             letter-spacing: 1px;
             border-radius: 25px;
-            border: none;
+            border:2px solid $white;
             &:focus{
                 outline: none;
             }
             &:hover{
                 background-color: transparent;
-                border: 2px solid $white;
                 color: $white;
-               
             }
         }
 
@@ -80,7 +106,7 @@ img{
     }
     .luxury{
         background-color: $darkcyan;
-        border-radius:0 0 10px 10px;
+        border-radius:0 0 10px 10;
 
         button{
             color: $darkcyan;

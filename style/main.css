@@ -16,6 +16,26 @@ img {
   display: block;
 }
 
+.check {
+  border: 2px solid black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: url(../Guid/design/mobile-design.jpg);
+  opacity: 0.2;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+@media screen and (min-width: 1200px) {
+  .check {
+    background: url(../Guid/design/desktop-design.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
 .app {
   position: relative;
   display: grid;
@@ -52,14 +72,13 @@ img {
   padding: 1.1rem 2.1rem;
   letter-spacing: 1px;
   border-radius: 25px;
-  border: none;
+  border: 2px solid #f2f2f2;
 }
 .app .card button:focus {
   outline: none;
 }
 .app .card button:hover {
   background-color: transparent;
-  border: 2px solid #f2f2f2;
   color: #f2f2f2;
 }
 .app .sedans {
@@ -77,7 +96,7 @@ img {
 }
 .app .luxury {
   background-color: #004241;
-  border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10;
 }
 .app .luxury button {
   color: #004241;
@@ -86,69 +105,36 @@ img {
 @media screen and (min-width: 1200px) {
   .app {
     padding: 10.8rem 16.4rem 8.2rem 16.4rem;
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    position: relative;
   }
   .app .card {
-    display: grid;
     padding: 3rem 0 2rem 3rem;
   }
   .app .card img {
     padding: 0;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
   .app .card h2 {
     font-size: 2.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     padding: 0;
-    font-family: "Big Shoulders Display", "cursive";
-    font-weight: 700;
     color: #f2f2f2;
   }
   .app .card P {
-    font-family: "Lexend Deca", sans-serif;
-    font-weight: 400;
-    margin-bottom: 1rem;
-    line-height: 1.6;
-    padding: 0 0 1.5rem 0;
-    padding-right: 2.4rem;
-    color: #f2f2f2;
+    margin-bottom: 2rem;
   }
   .app .card button {
-    padding: 1.1rem 2.1rem;
-    letter-spacing: 1px;
     margin-top: 2rem;
-    border-radius: 25px;
-    border: none;
-  }
-  .app .card button:focus {
-    outline: none;
+    padding: 1rem 2rem 1rem 2rem;
   }
   .app .card button:hover {
     background-color: transparent;
-    border: 2px solid #f2f2f2;
-    color: #f2f2f2;
   }
   .app .sedans {
-    background-color: #e38826;
     border-radius: 10px 0 0 10px;
   }
-  .app .sedans button {
-    color: #e38826;
-  }
-  .app .suvs {
-    background-color: #006970;
-  }
-  .app .suvs button {
-    color: #006970;
-  }
   .app .luxury {
-    background-color: #004241;
     border-radius: 0 10px 10px 0;
-  }
-  .app .luxury button {
-    color: #004241;
   }
 }
 @media screen and (min-width: 500px) and (max-width: 1200px) {
