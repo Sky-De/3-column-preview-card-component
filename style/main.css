@@ -16,26 +16,6 @@ img {
   display: block;
 }
 
-.check {
-  border: 2px solid black;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background: url(../Guid/design/mobile-design.jpg);
-  opacity: 0.2;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-@media screen and (min-width: 1200px) {
-  .check {
-    background: url(../Guid/design/desktop-design.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-  }
-}
-
 .app {
   position: relative;
   display: grid;
