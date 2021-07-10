@@ -1,0 +1,92 @@
+@import 'fonts';
+@import 'vars';
+@import 'mixins';
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    
+}
+img{
+    display: block;
+}
+
+
+.app{
+    position: relative;
+    display: grid;
+    height: 1490px;
+    padding: 5.5rem 1.6rem;
+    @media screen and (min-width:1200px){
+    height: 800px;
+    }
+    .card{
+        padding: 3rem 0 2.8rem 3rem;
+        img{
+            padding: 0 0 2.2rem 0;
+        }
+        h2{
+            font-size: 2.5rem;
+            padding: 0 0 1.6rem 0;
+            @include f2;
+            color: $white
+        }
+        P{
+            @include f1;
+            line-height: 1.6;
+            padding: 0 0 1.5rem 0;
+            padding-right: 2.4rem;
+            color: $white;
+        }
+        button{
+            padding: 1.1rem 2.1rem;
+            letter-spacing: 1px;
+            border-radius: 25px;
+            border: none;
+            &:focus{
+                outline: none;
+            }
+            &:hover{
+                background-color: transparent;
+                border: 2px solid $white;
+                color: $white;
+               
+            }
+        }
+
+    }
+
+    .sedans{
+        background-color: $orange;
+        border-radius:10px 10px 0 0;
+
+        button{
+            color: $orange;
+        }
+    }
+    .suvs{
+        background-color: $cyan;
+        button{
+            color: $cyan;
+        }
+    }
+    .luxury{
+        background-color: $darkcyan;
+        border-radius:0 0 10px 10px;
+
+        button{
+            color: $darkcyan;
+        }
+    }
+
+}
+
+@import 'res';

@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+}
+
+img {
+  display: block;
+}
+
+.app {
+  position: relative;
+  display: grid;
+  height: 1490px;
+  padding: 5.5rem 1.6rem;
+}
+@media screen and (min-width: 1200px) {
+  .app {
+    height: 800px;
+  }
+}
+.app .card {
+  padding: 3rem 0 2.8rem 3rem;
+}
+.app .card img {
+  padding: 0 0 2.2rem 0;
+}
+.app .card h2 {
+  font-size: 2.5rem;
+  padding: 0 0 1.6rem 0;
+  font-family: "Big Shoulders Display", "cursive";
+  font-weight: 700;
+  color: #f2f2f2;
+}
+.app .card P {
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  padding: 0 0 1.5rem 0;
+  padding-right: 2.4rem;
+  color: #f2f2f2;
+}
+.app .card button {
+  padding: 1.1rem 2.1rem;
+  letter-spacing: 1px;
+  border-radius: 25px;
+  border: none;
+}
+.app .card button:focus {
+  outline: none;
+}
+.app .card button:hover {
+  background-color: transparent;
+  border: 2px solid #f2f2f2;
+  color: #f2f2f2;
+}
+.app .sedans {
+  background-color: #e38826;
+  border-radius: 10px 10px 0 0;
+}
+.app .sedans button {
+  color: #e38826;
+}
+.app .suvs {
+  background-color: #006970;
+}
+.app .suvs button {
+  color: #006970;
+}
+.app .luxury {
+  background-color: #004241;
+  border-radius: 0 0 10px 10px;
+}
+.app .luxury button {
+  color: #004241;
+}
+
+@media screen and (min-width: 1200px) {
+  .app {
+    padding: 10.8rem 16.4rem 8.2rem 16.4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    position: relative;
+  }
+  .app .card {
+    display: grid;
+    padding: 3rem 0 2rem 3rem;
+  }
+  .app .card img {
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+  .app .card h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    padding: 0;
+    font-family: "Big Shoulders Display", "cursive";
+    font-weight: 700;
+    color: #f2f2f2;
+  }
+  .app .card P {
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+    padding: 0 0 1.5rem 0;
+    padding-right: 2.4rem;
+    color: #f2f2f2;
+  }
+  .app .card button {
+    padding: 1.1rem 2.1rem;
+    letter-spacing: 1px;
+    margin-top: 2rem;
+    border-radius: 25px;
+    border: none;
+  }
+  .app .card button:focus {
+    outline: none;
+  }
+  .app .card button:hover {
+    background-color: transparent;
+    border: 2px solid #f2f2f2;
+    color: #f2f2f2;
+  }
+  .app .sedans {
+    background-color: #e38826;
+    border-radius: 10px 0 0 10px;
+  }
+  .app .sedans button {
+    color: #e38826;
+  }
+  .app .suvs {
+    background-color: #006970;
+  }
+  .app .suvs button {
+    color: #006970;
+  }
+  .app .luxury {
+    background-color: #004241;
+    border-radius: 0 10px 10px 0;
+  }
+  .app .luxury button {
+    color: #004241;
+  }
+}
+@media screen and (min-width: 500px) and (max-width: 1200px) {
+  body {
+    display: flex;
+    justify-content: center;
+  }
+
+  .card {
+    max-width: 400px;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

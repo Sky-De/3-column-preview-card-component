@@ -1,0 +1,46 @@
+
+
+@mixin flex-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin  b-r {
+    border-radius: 25px;
+    
+}
+
+
+@mixin  min($px) {
+
+    @media only screen and (min-width:$px){
+        @content
+    }
+    
+};
+@mixin  max($px) {
+
+    @media only screen and (max-width:$px){
+        @content
+    }
+    
+};
+
+@mixin min-max($px1,$px2) {
+    @media only screen and (min-width:$px1) and (max-width:$px2){
+        @content
+    }
+};
+
+@mixin hover {
+    a:hover{
+        background-color: transparent;
+        border: 3px solid $white;
+        color: $white;
+    }
+};
+
+@mixin b-reset{
+    border-radius: 0;
+};

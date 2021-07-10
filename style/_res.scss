@@ -1,0 +1,87 @@
+
+
+
+@media screen and (min-width:1200px){
+    .app{
+        padding: 10.8rem 16.4rem 8.2rem 16.4rem;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        position: relative;
+        .card{
+            display: grid;
+            padding: 3rem 0 2rem 3rem;
+            img{
+                padding: 0 ;
+                margin-bottom: 1rem;
+            }
+            h2{
+                font-size: 2.5rem;
+                margin-bottom: 1rem;
+                padding: 0;
+                @include f2;
+                color: $white
+            }
+            P{
+                @include f1;
+                margin-bottom: 1rem;
+                line-height: 1.6;
+                padding: 0 0 1.5rem 0;
+                padding-right: 2.4rem;
+                color: $white;
+            }
+            button{
+                padding: 1.1rem 2.1rem;
+                letter-spacing: 1px;
+                margin-top: 2rem;
+                border-radius: 25px;
+                border: none;
+                &:focus{
+                    outline: none;
+                }
+                &:hover{
+                    background-color: transparent;
+                    border: 2px solid $white;
+                    color: $white;
+                   
+                }
+            }
+    
+        }
+    
+        .sedans{
+            background-color: $orange;
+            border-radius: 10px 0 0 10px;
+            button{
+                color: $orange;
+            }
+        }
+        .suvs{
+            background-color: $cyan;
+            button{
+                color: $cyan;
+            }
+        }
+        .luxury{
+            background-color: $darkcyan;
+            border-radius:0 10px 10px 0;
+
+            button{
+                color: $darkcyan;
+            }
+        }
+    
+    }
+    
+}
+
+
+
+@media screen and (min-width:500px) and (max-width:1200px){
+    body{
+        display: flex;
+        justify-content: center;
+    }
+    .card{
+        max-width: 400px;
+    }
+}

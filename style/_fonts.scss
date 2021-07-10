@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+//font-family: 'Lexend Deca', sans-serif;
+
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+//font-family: 'Big Shoulders Display', cursive;
+
+@mixin f1 {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+@mixin f2 {
+    font-family: 'Big Shoulders Display', 'cursive';
+    font-weight: 700;
+}
